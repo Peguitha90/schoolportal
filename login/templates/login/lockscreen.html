@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widthdevice-width">
+  <meta name="description" content="Lingwood Language School Portal for teachers and Students">
+  <meta name="author" content="Friendy Corporation & Mekicha">
+  <meta name="Keywords" content="Lingwood Language School Portal, School Management Software">
+  <link rel="stylesheet" href="{% static 'login/login.css' %}">
+  <title>Lingwood Portal | Lockscreen</title>
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body>
+<!-- From Login Page design -->
+<div class="container">
+<div class="left">
+<img src="{% static 'img/LINGWOOD.png' %}" alt="">
+<p><h1>SCHOOL PORTAL</h1></p>
+</div>
+<div class="right">
+  <div class="loginBox">
+        <div class="img">
+          <img  src="{% static 'dist/img/user-male-icon 128x128.jpg' %}" alt="User Image" align="middle">
+        </div>
+        <!-- User name -->
+        <div class="user_id"><h3>John Doe</h3></div>
+    <form>
+      <h1>Retrieve session</h1>
+      <input type="password" name="password" placeholder="Enter your password" required><br>
+      <input type="submit" name="Sign-In" value="Sign In"> <br>
+      <a href="../">Sign in as a different user</a>
+    </form>
+
+  </div>
+</div>
+</div>
+<!-- Copyright footer -->
+<div class="footer">
+  Copyright &copy; 2019 <b><a href="www.ling-wood.ru" class="text-black">Lingwood Language School</a></b><br>
+  All rights reserved
+</div>
+
+<!-- jQuery 3 -->
+<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+</body>
+</html>
