@@ -31,6 +31,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'manageTeachers.apps.ManageteachersConfig',
+    'manageStudents.apps.ManagestudentsConfig',
+    'manageReports.apps.ManagereportsConfig',
+    'calendar1.apps.Calendar1Config',
+    'manageClasses.apps.ManageclassesConfig',
+    'manageSchedule.apps.ManagescheduleConfig',
+    'newsfeed.apps.NewsfeedConfig',
+    'inbox.apps.InboxConfig',
+    'dashboard.apps.DashboardConfig',
+    'classes.apps.ClassesConfig',
+    'lockscreen.apps.LockscreenConfig',
     'userprofile.apps.UserprofileConfig',
     'login.apps.LoginConfig',
     'django.contrib.admin',
@@ -118,5 +129,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+
+STATIC_URL = '/static/'
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates'),
+)
+STATICFILES_DIRS = (
+     os.path.join(BASE_DIR, 'static'),
+)
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
 STATIC_URL = '/static/'

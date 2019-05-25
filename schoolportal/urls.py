@@ -20,5 +20,16 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', include('login.urls')),
-    path('userprofile/', include('userprofile.urls')),
+    path('profile/', include('userprofile.urls')),
+    path('lockscreen/', include('lockscreen.urls')),
+    path('classes/', include('classes.urls')),
+    path('dashboard/', include('dashboard.urls')),
+    path('calendar/', include('calendar1.urls')),
+    path('mailbox/', include('inbox.urls')),
+    path('newsfeed/', include('newsfeed.urls')),
+    path('admin_classes/', include('manageClasses.urls')),
+    path('admin_reports/', include('manageReports.urls')),
+    path('admin_schedule/', include('manageSchedule.urls')),
+    path('admin_students/', include('manageStudents.urls')),
+    path('admin_teachers/', include('manageTeachers.urls')),
 ]

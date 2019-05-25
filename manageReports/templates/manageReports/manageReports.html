@@ -279,15 +279,37 @@ desired effect
           </a>
         </li>
         <!-- Mailbox -->
-        <li>
-          <a href="../mailbox">
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
+              <i class="fa fa-angle-left pull-right"></i>
+              <small class="label pull-right bg-yellow">5</small>
               <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
+              <small class="label pull-right bg-red">13</small>
             </span>
           </a>
+          <ul class="treeview-menu">
+            <li class="active">
+              <a href="../mailbox">Inbox
+                <span class="pull-right-container">
+                  <span class="label pull-right bg-red">13</span>
+                </span>
+              </a>
+            </li>
+            <li><a href="../mailbox/compose.html">Compose
+              <span class="pull-right-container">
+                <span class="label pull-right bg-green">16</span>
+              </span>
+            </a>
+          </li>
+            <li><a href="../mailbox/read-mail">Read
+              <span class="pull-right-container">
+                <span class="label pull-right bg-yellow">5</span>
+              </span>
+            </a>
+          </li>
+          </ul>
         </li>
         <!-- Newsfeed -->
         <li>
@@ -328,7 +350,7 @@ desired effect
           </a>
         </li>
         <!-- Reports -->
-        <li>
+        <li class="treeview active">
           <a href="../admin_reports">
             <i class="fa fa-file-text"></i> <span>Reports</span>
           </a>
@@ -343,11 +365,12 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Profile
+        Reports
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Profile</li>
+        <li>Admin</li>
+        <li class="active">Reports</li>
       </ol>
     </section>
 
